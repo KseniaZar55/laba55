@@ -6,10 +6,9 @@ def e1():
         "Франция" : "Париж",
         "Финляндия" : "Хельсинки"
     }
-
-    ("a",stran)
-    print(stran[x])
-    ("c", sorted(stran))
+    print("a", countries)
+    print("b", countries[x])
+    print("c", sorted(countries))
 
 def e2():
     ochki={
@@ -30,33 +29,4 @@ def e2():
                 d+=k
     print(d)
 
-def e3():
-    students={
-        'A' : ['eng','rus','spa'],
-        'B' : ['eng','rus','chi'],
-        'C' : ['rus','eng'],
-        'D' : ['chi','rus'],
-        'E' : ['rus'],
-        'F' : ['eng', 'spa'],
-        'J' : ['kaz', 'rus'],
-        'H' : ['eng','ita'],
-        'I' : ['eng','fra']
-    }
-    d = []
-    c = 0
-    k=[]
-    for i in students:
-        for i in students[i]:
-            if i not in d:
-                d.append(i)
-                c+=1
-    for i in students:
-        if 'chi' in students[i]:
-            k.append(i)
-        else:
-            continue
-    print(d)
-    print(c)
-    print(sorted(d))
-    print(*k)
-e1()
+e2()
